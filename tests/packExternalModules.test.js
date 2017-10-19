@@ -116,7 +116,8 @@ describe('packExternalModules', () => {
         webpack: {
           includeModules: true
         }
-      })
+      }),
+      webpackConfig: [{ not: 'empty' }],
     }, baseModule);
   });
 
